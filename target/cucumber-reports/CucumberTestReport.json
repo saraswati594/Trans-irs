@@ -1,0 +1,226 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 25,
+        "name": "User should lunch the application",
+        "description": "",
+        "id": "as-a-trance-user,-lunch-the-application;user-should-lunch-the-application;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 6594651300,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "open Trance-Irs application",
+            "match": {
+              "location": "LunchStep.lunchTrance()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2090189399,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User able see Trance-IRS Application Signin Page",
+            "match": {
+              "location": "LunchStep.seeSignPage()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 297225400,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user enter valid admin username \"shetty\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "shetty",
+                  "offset": 33
+                }
+              ],
+              "location": "LunchStep.enterUserName(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 156920300,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user enter valid admin password \"dnis@123\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "dnis@123",
+                  "offset": 33
+                }
+              ],
+              "location": "LunchStep.enter_Pass(String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1462610101,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "click on login button",
+            "match": {
+              "location": "LunchStep.submitLogin()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1076580299,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "user succesfully reached to pre-homepage",
+            "match": {
+              "location": "LunchStep.succuessfullHomepage()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1071348299,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "user able to see homepage DN process",
+            "match": {
+              "location": "LunchStep.seeHomepage()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1936470400,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "user able click on DN Workflow",
+            "match": {
+              "location": "LunchStep.clickDn()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 47449801,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "user succesfully reached to DN Page",
+            "match": {
+              "location": "LunchStep.welcomeDn()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 128290601,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "user click on manage option on menubar",
+            "match": {
+              "location": "LunchStep.manage()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2582649200,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "user click on call management function",
+            "match": {
+              "location": "LunchStep.call_management()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 609361100,
+              "status": "passed"
+            },
+            "comments": [
+              {
+                "line": 16,
+                "value": "#Then user select the event date"
+              },
+              {
+                "line": 17,
+                "value": "#And user select search by ticker or event"
+              },
+              {
+                "line": 18,
+                "value": "#And user enter id"
+              },
+              {
+                "line": 19,
+                "value": "#And user select timezone"
+              }
+            ],
+            "line": 20,
+            "name": "user click on display button",
+            "match": {
+              "location": "LunchStep.click_display()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 11196573100,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "user able to logout",
+            "match": {
+              "location": "LunchStep.logout()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 63171899,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "user able to see signin page",
+            "match": {
+              "location": "LunchStep.ableToSeeSignPage()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "As a Trance user, lunch the application",
+    "description": "",
+    "id": "as-a-trance-user,-lunch-the-application",
+    "keyword": "Feature",
+    "uri": "C:/Users/hp/eclipse-workspace/Digital-Nirvana/Trance-Irs/src/main/java/Features/Lunch.feature"
+  }
+]
