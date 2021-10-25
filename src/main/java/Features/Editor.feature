@@ -14,9 +14,16 @@ When users succesfully reached to the DN Page
 Then users click on the file option on menubar
 When users click on the GetEditorJob Page
 Then users succesfully reached to the GetEditorJob Page
-
+And user able to check ticker "<ticker>"
+And user able to check eventid "<eventid>"
+And user click on save button
+Then user click on file option on menubar
+And user click on job complete option
+When user able to see popup job complete
+Then user click on logout button
+Then user successfully logout 
 
 
 Examples:   
-     | username | password |
-     | shetty2   | dnis@123 |
+     | username | password | ticker | eventid |
+     | shetty2  | dnis@123 |        |         |

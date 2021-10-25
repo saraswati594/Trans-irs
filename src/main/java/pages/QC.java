@@ -30,9 +30,17 @@ public class QC {
 	@FindBy(xpath="//a[contains(text(),'File')]")
 	WebElement file;
 	
+	@FindBy(xpath="/html/body/div[1]/div[2]/div[1]/div[1]/div[2]/div[1]/div/ul/li[1]/strong")
+	WebElement event;
+	
+	@FindBy(xpath="/html/body/div[1]/div[2]/div[1]/div[1]/div[2]/div[1]/div/ul/li[3]/strong")
+	WebElement ticker;
+	
+	@FindBy(xpath="//strong[contains(text(),'QC')]")
+	WebElement position;
+	
 	@FindBy(xpath="//a[contains(text(),'Get QC Job')]")
 	WebElement QCJob;
-	
 	
 	public void click_username(String un) {
 		username.sendKeys(un);
@@ -63,6 +71,36 @@ public class QC {
 		  QCJob.click(); 
 		  
 	}
+	 
+	 public void matchPosition() {
+		   if(position.getText().equalsIgnoreCase("Qc")) {
+				System.out.println("succesfully reached in qc page");
+			}
+			else {
+				System.out.println("failed");
+				System.exit(1);
+			}
+	   }
+	   public void matchevent(String evnt) {
+		  if(event.getText().equalsIgnoreCase(evnt)) {
+			  System.out.println("event id is matched");
+		  }
+		  else {
+			  System.out.println("ticker match failed");
+			  System.exit(1);
+		  }
+	   }
+	   
+	   public void matchticker(String tck) {
+			  if(ticker.getText().equalsIgnoreCase(tck)) {
+				  System.out.println("ticker is matched");
+			  }
+			  else {
+				  System.out.println("ticker match failed");
+				  System.exit(1);
+			  }
+		   }
+	   
 	 
 		   
 

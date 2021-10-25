@@ -13,11 +13,13 @@ Then user able click on DN Workflow
 When user succesfully reached to DN Page
 Then user click on manage option on menubar
 And user click on call management function
-#Then user select the event date
-#And user select search by ticker or event
-#And user enter id
-#And user select timezone
-Then user click on display button
+Then user verify the tiker present or not "KFI53"
+And user verify the recording is availble or not 
+And user select the team management
+And user select the team for skimmer "574"
+And user select the team for editor "574"
+And user select the team for qc "574"
+And user select the all prority
 Then user able to logout
 Then user able to see signin page
 		Examples:   

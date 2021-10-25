@@ -1,6 +1,6 @@
 pages\LoginPage.class
-stepDefinitions\LoginPageSteps.class
 pages\ManualJob.class
-pages\MenuBar.class
 pages\LunchPage.class
+stepDefinitions\LoginPageSteps.class
+pages\MenuBar.class
 stepDefinitions\LunchStep.class

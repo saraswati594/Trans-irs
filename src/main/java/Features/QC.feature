@@ -15,8 +15,17 @@ When user succesfuly reached to the DN Page
 Then user click on the file optiion on menubar
 When user click on the GetQCJoob Page
 Then user succesfully reached to the GetQCJoob Page
+And user able to verify ticker "<ticker>"
+And user able to verify event id "<eventid"
+Then user click on save option
+Then user click on file option
+And user click on close job button
+When user can able to see popup for confirmation
+Then user click on logout option
+
+
 
 
 Examples:   
-     | username | password |
-     | shetty3   | dnis@123 |
+     | username | password | ticker | eventid |
+     | shetty3  | dnis@123 |        |         |

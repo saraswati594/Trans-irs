@@ -85,6 +85,7 @@ public class LunchStep extends Base {
 		menu.click_CallManagement();
 	}
 	
+
 //	@Then("user select the event date")
 //	public void eventdate(String da) {
 //		lunch.enter_date(da);
@@ -105,10 +106,41 @@ public class LunchStep extends Base {
 //		lunch.enter_timezone();
 //	}
 //	
-	@Then("user click on display button")
-	public void click_display() {
-		menu.click_Display();
+	@Then("user verify the tiker present or not \"([^\"]*)\"$")
+	public void user_verify_the_tiker_present_or_not(String tic) {
+		lunch.matchTicker(tic);
 	}
+	
+	@And("user verify the recording is availble or not")
+	public void user_verify_the_recording_is_availble_or_not() {
+		lunch.data_availble();
+	}
+	
+	@And("user select the team management")
+	public void user_select_the_team_management() {
+		
+	}
+	
+	@And("user select the team for skimmer \"([^\"]*)\"$")
+	public void user_select_the_team_for_skimmer(String sk) throws InterruptedException {
+		lunch.enterSkimmer(sk);
+	}
+	
+	@And("user select the team for editor \"([^\"]*)\"$")
+	public void user_select_the_team_for_editor(String ed) throws InterruptedException {
+		lunch.enterEditor(ed);
+	}
+	
+	@And("user select the team for qc \"([^\"]*)\"$")
+	public void user_select_the_team_for_qc(String qc) throws InterruptedException {
+	lunch.enterQc(qc);	
+	}
+	
+	@And("user select the all prority")
+	public void user_select_the_all_prority() {
+		lunch.enterPrority();
+	}
+	
 	@Then("user able to logout") 
 	public void logout() throws InterruptedException {
 		Thread.sleep(10000);

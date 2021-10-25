@@ -1,153 +1,160 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("C:/Users/hp/eclipse-workspace/Digital-Nirvana/Trance-Irs/src/main/java/Features/Lunch.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("C:/Users/hp/eclipse-workspace/Digital-Nirvana/Trance-Irs/src/main/java/Features/Skimmer.feature");
 formatter.feature({
   "line": 1,
-  "name": "As a Trance user, lunch the application",
+  "name": "As a trance user, skimmer editing",
   "description": "",
-  "id": "as-a-trance-user,-lunch-the-application",
+  "id": "as-a-trance-user,-skimmer-editing",
   "keyword": "Feature"
 });
 formatter.scenarioOutline({
   "line": 3,
-  "name": "User should lunch the application",
+  "name": "User should edit the skimmer part",
   "description": "",
-  "id": "as-a-trance-user,-lunch-the-application;user-should-lunch-the-application",
+  "id": "as-a-trance-user,-skimmer-editing;user-should-edit-the-skimmer-part",
   "type": "scenario_outline",
   "keyword": "Scenario Outline"
 });
 formatter.step({
   "line": 5,
-  "name": "open Trance-Irs application",
+  "name": "opening Trance-irs application",
   "keyword": "Given "
 });
 formatter.step({
   "line": 6,
-  "name": "User able see Trance-IRS Application Signin Page",
+  "name": "User able see the Trance-IRSs Application Signing Page",
   "keyword": "When "
 });
 formatter.step({
   "line": 7,
-  "name": "user enter valid admin username \"\u003cusername\u003e\"",
+  "name": "user able to enter skimmer valid usernames \"\u003cusername\u003e\"",
   "keyword": "Then "
 });
 formatter.step({
   "line": 8,
-  "name": "user enter valid admin password \"\u003cpassword\u003e\"",
-  "keyword": "Then "
+  "name": "user able to enter skimmer valid password \"\u003cpassword\u003e\"",
+  "keyword": "And "
 });
 formatter.step({
   "line": 9,
-  "name": "click on login button",
-  "keyword": "When "
+  "name": "user able to clicks on the login button",
+  "keyword": "Then "
 });
 formatter.step({
   "line": 10,
-  "name": "user succesfully reached to pre-homepage",
-  "keyword": "Then "
+  "name": "user succesfullys reached to the pre-homepage",
+  "keyword": "When "
 });
 formatter.step({
   "line": 11,
-  "name": "user able to see homepage DN process",
-  "keyword": "When "
-});
-formatter.step({
-  "line": 12,
-  "name": "user able click on DN Workflow",
+  "name": "user able to see the homepage DN processs",
   "keyword": "Then "
 });
 formatter.step({
-  "line": 13,
-  "name": "user succesfully reached to DN Page",
+  "line": 12,
+  "name": "user able to clicks on the DN Workflow",
   "keyword": "When "
 });
 formatter.step({
+  "line": 13,
+  "name": "user succesfully reacheds to the DN Page",
+  "keyword": "Then "
+});
+formatter.step({
   "line": 14,
-  "name": "user click on manage option on menubar",
+  "name": "user click on the file option on menubars",
   "keyword": "Then "
 });
 formatter.step({
   "line": 15,
-  "name": "user click on call management function",
-  "keyword": "And "
+  "name": "user click on the GetWriterJobs Page",
+  "keyword": "When "
 });
 formatter.step({
-  "comments": [
-    {
-      "line": 16,
-      "value": "#Then user select the event date"
-    },
-    {
-      "line": 17,
-      "value": "#And user select search by ticker or event"
-    },
-    {
-      "line": 18,
-      "value": "#And user enter id"
-    },
-    {
-      "line": 19,
-      "value": "#And user select timezone"
-    }
-  ],
-  "line": 20,
-  "name": "user click on display button",
+  "line": 16,
+  "name": "user succesfully reacheds to the GetWriterJob Page",
   "keyword": "Then "
 });
 formatter.step({
+  "line": 17,
+  "name": "user checks the ticker name it should match with given ticker",
+  "keyword": "When "
+});
+formatter.step({
+  "line": 18,
+  "name": "user verify text should present in text filed",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 19,
+  "name": "user push the text to upper text filed",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 20,
+  "name": "user save the process",
+  "keyword": "And "
+});
+formatter.step({
   "line": 21,
-  "name": "user able to logout",
+  "name": "user click on file option on menubar",
   "keyword": "Then "
 });
 formatter.step({
   "line": 22,
-  "name": "user able to see signin page",
+  "name": "user click on jobcomplete option",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 23,
+  "name": "user click on logout",
   "keyword": "Then "
 });
 formatter.examples({
-  "line": 23,
+  "line": 25,
   "name": "",
   "description": "",
-  "id": "as-a-trance-user,-lunch-the-application;user-should-lunch-the-application;",
+  "id": "as-a-trance-user,-skimmer-editing;user-should-edit-the-skimmer-part;",
   "rows": [
     {
       "cells": [
         "username",
         "password"
       ],
-      "line": 24,
-      "id": "as-a-trance-user,-lunch-the-application;user-should-lunch-the-application;;1"
+      "line": 26,
+      "id": "as-a-trance-user,-skimmer-editing;user-should-edit-the-skimmer-part;;1"
     },
     {
       "cells": [
-        "shetty",
+        "shetty1",
         "dnis@123"
       ],
-      "line": 25,
-      "id": "as-a-trance-user,-lunch-the-application;user-should-lunch-the-application;;2"
+      "line": 27,
+      "id": "as-a-trance-user,-skimmer-editing;user-should-edit-the-skimmer-part;;2"
     }
   ],
   "keyword": "Examples"
 });
 formatter.scenario({
-  "line": 25,
-  "name": "User should lunch the application",
+  "line": 27,
+  "name": "User should edit the skimmer part",
   "description": "",
-  "id": "as-a-trance-user,-lunch-the-application;user-should-lunch-the-application;;2",
+  "id": "as-a-trance-user,-skimmer-editing;user-should-edit-the-skimmer-part;;2",
   "type": "scenario",
   "keyword": "Scenario Outline"
 });
 formatter.step({
   "line": 5,
-  "name": "open Trance-Irs application",
+  "name": "opening Trance-irs application",
   "keyword": "Given "
 });
 formatter.step({
   "line": 6,
-  "name": "User able see Trance-IRS Application Signin Page",
+  "name": "User able see the Trance-IRSs Application Signing Page",
   "keyword": "When "
 });
 formatter.step({
   "line": 7,
-  "name": "user enter valid admin username \"shetty\"",
+  "name": "user able to enter skimmer valid usernames \"shetty1\"",
   "matchedColumns": [
     0
   ],
@@ -155,188 +162,230 @@ formatter.step({
 });
 formatter.step({
   "line": 8,
-  "name": "user enter valid admin password \"dnis@123\"",
+  "name": "user able to enter skimmer valid password \"dnis@123\"",
   "matchedColumns": [
     1
   ],
-  "keyword": "Then "
+  "keyword": "And "
 });
 formatter.step({
   "line": 9,
-  "name": "click on login button",
-  "keyword": "When "
+  "name": "user able to clicks on the login button",
+  "keyword": "Then "
 });
 formatter.step({
   "line": 10,
-  "name": "user succesfully reached to pre-homepage",
-  "keyword": "Then "
+  "name": "user succesfullys reached to the pre-homepage",
+  "keyword": "When "
 });
 formatter.step({
   "line": 11,
-  "name": "user able to see homepage DN process",
-  "keyword": "When "
-});
-formatter.step({
-  "line": 12,
-  "name": "user able click on DN Workflow",
+  "name": "user able to see the homepage DN processs",
   "keyword": "Then "
 });
 formatter.step({
-  "line": 13,
-  "name": "user succesfully reached to DN Page",
+  "line": 12,
+  "name": "user able to clicks on the DN Workflow",
   "keyword": "When "
 });
 formatter.step({
+  "line": 13,
+  "name": "user succesfully reacheds to the DN Page",
+  "keyword": "Then "
+});
+formatter.step({
   "line": 14,
-  "name": "user click on manage option on menubar",
+  "name": "user click on the file option on menubars",
   "keyword": "Then "
 });
 formatter.step({
   "line": 15,
-  "name": "user click on call management function",
-  "keyword": "And "
+  "name": "user click on the GetWriterJobs Page",
+  "keyword": "When "
 });
 formatter.step({
-  "comments": [
-    {
-      "line": 16,
-      "value": "#Then user select the event date"
-    },
-    {
-      "line": 17,
-      "value": "#And user select search by ticker or event"
-    },
-    {
-      "line": 18,
-      "value": "#And user enter id"
-    },
-    {
-      "line": 19,
-      "value": "#And user select timezone"
-    }
-  ],
-  "line": 20,
-  "name": "user click on display button",
+  "line": 16,
+  "name": "user succesfully reacheds to the GetWriterJob Page",
   "keyword": "Then "
 });
 formatter.step({
+  "line": 17,
+  "name": "user checks the ticker name it should match with given ticker",
+  "keyword": "When "
+});
+formatter.step({
+  "line": 18,
+  "name": "user verify text should present in text filed",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 19,
+  "name": "user push the text to upper text filed",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 20,
+  "name": "user save the process",
+  "keyword": "And "
+});
+formatter.step({
   "line": 21,
-  "name": "user able to logout",
+  "name": "user click on file option on menubar",
   "keyword": "Then "
 });
 formatter.step({
   "line": 22,
-  "name": "user able to see signin page",
+  "name": "user click on jobcomplete option",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 23,
+  "name": "user click on logout",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "LunchStep.lunchTrance()"
+  "location": "SkimmerStep.open_Trance_application()"
 });
 formatter.result({
-  "duration": 6594651300,
+  "duration": 8839021300,
   "status": "passed"
 });
 formatter.match({
-  "location": "LunchStep.seeSignPage()"
+  "location": "SkimmerStep.user_able_to_see_Trans()"
 });
 formatter.result({
-  "duration": 2090189399,
+  "duration": 2064686300,
   "status": "passed"
 });
 formatter.match({
   "arguments": [
     {
-      "val": "shetty",
-      "offset": 33
+      "val": "shetty1",
+      "offset": 44
     }
   ],
-  "location": "LunchStep.enterUserName(String)"
+  "location": "SkimmerStep.user_enter_the_valid_(String)"
 });
 formatter.result({
-  "duration": 297225400,
+  "duration": 154935600,
   "status": "passed"
 });
 formatter.match({
   "arguments": [
     {
       "val": "dnis@123",
-      "offset": 33
+      "offset": 43
     }
   ],
-  "location": "LunchStep.enter_Pass(String)"
+  "location": "SkimmerStep.user_enter_the_valid_pass(String)"
 });
 formatter.result({
-  "duration": 156920300,
+  "duration": 146164100,
   "status": "passed"
 });
 formatter.match({
-  "location": "LunchStep.submitLogin()"
+  "location": "SkimmerStep.user_click_on_the_login_button()"
 });
 formatter.result({
-  "duration": 1462610101,
+  "duration": 1277127600,
   "status": "passed"
 });
 formatter.match({
-  "location": "LunchStep.succuessfullHomepage()"
+  "location": "SkimmerStep.user_succesfully_reached_to_the_prehomepage()"
 });
 formatter.result({
-  "duration": 1076580299,
+  "duration": 1059631300,
   "status": "passed"
 });
 formatter.match({
-  "location": "LunchStep.seeHomepage()"
+  "location": "SkimmerStep.user_able_to_see_the_homepage_DN_process()"
 });
 formatter.result({
-  "duration": 1071348299,
+  "duration": 1056259100,
   "status": "passed"
 });
 formatter.match({
-  "location": "LunchStep.clickDn()"
+  "location": "SkimmerStep.user_able_to_click_on_the_DN_workflow()"
 });
 formatter.result({
-  "duration": 1936470400,
+  "duration": 1377684700,
   "status": "passed"
 });
 formatter.match({
-  "location": "LunchStep.welcomeDn()"
+  "location": "SkimmerStep.user_succesfully_reached_to_the_DN_Page()"
 });
 formatter.result({
-  "duration": 47449801,
+  "duration": 41705400,
   "status": "passed"
 });
 formatter.match({
-  "location": "LunchStep.manage()"
+  "location": "SkimmerStep.user_click_on_the_file_option_on_menubar()"
 });
 formatter.result({
-  "duration": 128290601,
+  "duration": 99932300,
   "status": "passed"
 });
 formatter.match({
-  "location": "LunchStep.call_management()"
+  "location": "SkimmerStep.user_click_on_the_GetWriterJob_Page()"
 });
 formatter.result({
-  "duration": 2582649200,
+  "duration": 1392614200,
   "status": "passed"
 });
 formatter.match({
-  "location": "LunchStep.click_display()"
+  "location": "SkimmerStep.user_succesfully_reached_to_the_GetWriterJob_Page()"
 });
 formatter.result({
-  "duration": 609361100,
+  "duration": 34000,
   "status": "passed"
 });
 formatter.match({
-  "location": "LunchStep.logout()"
+  "location": "SkimmerStep.user_checks_the_ticker_name_it_should_match_with_given_ticker()"
 });
 formatter.result({
-  "duration": 11196573100,
+  "duration": 104600,
   "status": "passed"
 });
 formatter.match({
-  "location": "LunchStep.ableToSeeSignPage()"
+  "location": "SkimmerStep.user_verify_text_should_present_in_text_filed()"
 });
 formatter.result({
-  "duration": 63171899,
+  "duration": 73900,
+  "status": "passed"
+});
+formatter.match({
+  "location": "SkimmerStep.user_push_the_text_to_upper_text_filed()"
+});
+formatter.result({
+  "duration": 29400,
+  "status": "passed"
+});
+formatter.match({
+  "location": "SkimmerStep.user_save_the_process()"
+});
+formatter.result({
+  "duration": 31600,
+  "status": "passed"
+});
+formatter.match({
+  "location": "SkimmerStep.user_click_on_file_option_on_menubar()"
+});
+formatter.result({
+  "duration": 130200,
+  "status": "passed"
+});
+formatter.match({
+  "location": "SkimmerStep.user_click_on_jobcomplete_option()"
+});
+formatter.result({
+  "duration": 39800,
+  "status": "passed"
+});
+formatter.match({
+  "location": "SkimmerStep.user_click_on_logout()"
+});
+formatter.result({
+  "duration": 38800,
   "status": "passed"
 });
 });

@@ -10,7 +10,7 @@ import cucumber.api.testng.CucumberFeatureWrapper;
 import cucumber.api.testng.TestNGCucumberRunner;
 
 @CucumberOptions(
-        features = "C:\\Users\\hp\\eclipse-workspace\\Digital-Nirvana\\Trance-Irs\\src\\main\\java\\Features\\QC.feature",
+        features = "C:\\Users\\hp\\eclipse-workspace\\Digital-Nirvana\\Trance-Irs\\src\\main\\java\\Features\\Skimmer.feature",
         glue = {"stepDefinitions"},
         tags = {"~@Ignore"},
         format = {

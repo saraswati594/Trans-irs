@@ -3,52 +3,52 @@
     "line": 1,
     "elements": [
       {
-        "line": 25,
-        "name": "User should lunch the application",
+        "line": 27,
+        "name": "User should edit the skimmer part",
         "description": "",
-        "id": "as-a-trance-user,-lunch-the-application;user-should-lunch-the-application;;2",
+        "id": "as-a-trance-user,-skimmer-editing;user-should-edit-the-skimmer-part;;2",
         "type": "scenario",
         "keyword": "Scenario Outline",
         "steps": [
           {
             "result": {
-              "duration": 6594651300,
+              "duration": 8839021300,
               "status": "passed"
             },
             "line": 5,
-            "name": "open Trance-Irs application",
+            "name": "opening Trance-irs application",
             "match": {
-              "location": "LunchStep.lunchTrance()"
+              "location": "SkimmerStep.open_Trance_application()"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 2090189399,
+              "duration": 2064686300,
               "status": "passed"
             },
             "line": 6,
-            "name": "User able see Trance-IRS Application Signin Page",
+            "name": "User able see the Trance-IRSs Application Signing Page",
             "match": {
-              "location": "LunchStep.seeSignPage()"
+              "location": "SkimmerStep.user_able_to_see_Trans()"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 297225400,
+              "duration": 154935600,
               "status": "passed"
             },
             "line": 7,
-            "name": "user enter valid admin username \"shetty\"",
+            "name": "user able to enter skimmer valid usernames \"shetty1\"",
             "match": {
               "arguments": [
                 {
-                  "val": "shetty",
-                  "offset": 33
+                  "val": "shetty1",
+                  "offset": 44
                 }
               ],
-              "location": "LunchStep.enterUserName(String)"
+              "location": "SkimmerStep.user_enter_the_valid_(String)"
             },
             "matchedColumns": [
               0
@@ -57,170 +57,212 @@
           },
           {
             "result": {
-              "duration": 156920300,
+              "duration": 146164100,
               "status": "passed"
             },
             "line": 8,
-            "name": "user enter valid admin password \"dnis@123\"",
+            "name": "user able to enter skimmer valid password \"dnis@123\"",
             "match": {
               "arguments": [
                 {
                   "val": "dnis@123",
-                  "offset": 33
+                  "offset": 43
                 }
               ],
-              "location": "LunchStep.enter_Pass(String)"
+              "location": "SkimmerStep.user_enter_the_valid_pass(String)"
             },
             "matchedColumns": [
               1
             ],
-            "keyword": "Then "
+            "keyword": "And "
           },
           {
             "result": {
-              "duration": 1462610101,
+              "duration": 1277127600,
               "status": "passed"
             },
             "line": 9,
-            "name": "click on login button",
+            "name": "user able to clicks on the login button",
             "match": {
-              "location": "LunchStep.submitLogin()"
+              "location": "SkimmerStep.user_click_on_the_login_button()"
             },
-            "keyword": "When "
+            "keyword": "Then "
           },
           {
             "result": {
-              "duration": 1076580299,
+              "duration": 1059631300,
               "status": "passed"
             },
             "line": 10,
-            "name": "user succesfully reached to pre-homepage",
+            "name": "user succesfullys reached to the pre-homepage",
             "match": {
-              "location": "LunchStep.succuessfullHomepage()"
+              "location": "SkimmerStep.user_succesfully_reached_to_the_prehomepage()"
             },
-            "keyword": "Then "
+            "keyword": "When "
           },
           {
             "result": {
-              "duration": 1071348299,
+              "duration": 1056259100,
               "status": "passed"
             },
             "line": 11,
-            "name": "user able to see homepage DN process",
+            "name": "user able to see the homepage DN processs",
             "match": {
-              "location": "LunchStep.seeHomepage()"
+              "location": "SkimmerStep.user_able_to_see_the_homepage_DN_process()"
             },
-            "keyword": "When "
+            "keyword": "Then "
           },
           {
             "result": {
-              "duration": 1936470400,
+              "duration": 1377684700,
               "status": "passed"
             },
             "line": 12,
-            "name": "user able click on DN Workflow",
+            "name": "user able to clicks on the DN Workflow",
             "match": {
-              "location": "LunchStep.clickDn()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 47449801,
-              "status": "passed"
-            },
-            "line": 13,
-            "name": "user succesfully reached to DN Page",
-            "match": {
-              "location": "LunchStep.welcomeDn()"
+              "location": "SkimmerStep.user_able_to_click_on_the_DN_workflow()"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 128290601,
+              "duration": 41705400,
               "status": "passed"
             },
-            "line": 14,
-            "name": "user click on manage option on menubar",
+            "line": 13,
+            "name": "user succesfully reacheds to the DN Page",
             "match": {
-              "location": "LunchStep.manage()"
+              "location": "SkimmerStep.user_succesfully_reached_to_the_DN_Page()"
             },
             "keyword": "Then "
           },
           {
             "result": {
-              "duration": 2582649200,
+              "duration": 99932300,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "user click on the file option on menubars",
+            "match": {
+              "location": "SkimmerStep.user_click_on_the_file_option_on_menubar()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1392614200,
               "status": "passed"
             },
             "line": 15,
-            "name": "user click on call management function",
+            "name": "user click on the GetWriterJobs Page",
             "match": {
-              "location": "LunchStep.call_management()"
+              "location": "SkimmerStep.user_click_on_the_GetWriterJob_Page()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 34000,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "user succesfully reacheds to the GetWriterJob Page",
+            "match": {
+              "location": "SkimmerStep.user_succesfully_reached_to_the_GetWriterJob_Page()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 104600,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "user checks the ticker name it should match with given ticker",
+            "match": {
+              "location": "SkimmerStep.user_checks_the_ticker_name_it_should_match_with_given_ticker()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 73900,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "user verify text should present in text filed",
+            "match": {
+              "location": "SkimmerStep.user_verify_text_should_present_in_text_filed()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 29400,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "user push the text to upper text filed",
+            "match": {
+              "location": "SkimmerStep.user_push_the_text_to_upper_text_filed()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 609361100,
+              "duration": 31600,
               "status": "passed"
             },
-            "comments": [
-              {
-                "line": 16,
-                "value": "#Then user select the event date"
-              },
-              {
-                "line": 17,
-                "value": "#And user select search by ticker or event"
-              },
-              {
-                "line": 18,
-                "value": "#And user enter id"
-              },
-              {
-                "line": 19,
-                "value": "#And user select timezone"
-              }
-            ],
             "line": 20,
-            "name": "user click on display button",
+            "name": "user save the process",
             "match": {
-              "location": "LunchStep.click_display()"
+              "location": "SkimmerStep.user_save_the_process()"
             },
-            "keyword": "Then "
+            "keyword": "And "
           },
           {
             "result": {
-              "duration": 11196573100,
+              "duration": 130200,
               "status": "passed"
             },
             "line": 21,
-            "name": "user able to logout",
+            "name": "user click on file option on menubar",
             "match": {
-              "location": "LunchStep.logout()"
+              "location": "SkimmerStep.user_click_on_file_option_on_menubar()"
             },
             "keyword": "Then "
           },
           {
             "result": {
-              "duration": 63171899,
+              "duration": 39800,
               "status": "passed"
             },
             "line": 22,
-            "name": "user able to see signin page",
+            "name": "user click on jobcomplete option",
             "match": {
-              "location": "LunchStep.ableToSeeSignPage()"
+              "location": "SkimmerStep.user_click_on_jobcomplete_option()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 38800,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "user click on logout",
+            "match": {
+              "location": "SkimmerStep.user_click_on_logout()"
             },
             "keyword": "Then "
           }
         ]
       }
     ],
-    "name": "As a Trance user, lunch the application",
+    "name": "As a trance user, skimmer editing",
     "description": "",
-    "id": "as-a-trance-user,-lunch-the-application",
+    "id": "as-a-trance-user,-skimmer-editing",
     "keyword": "Feature",
-    "uri": "C:/Users/hp/eclipse-workspace/Digital-Nirvana/Trance-Irs/src/main/java/Features/Lunch.feature"
+    "uri": "C:/Users/hp/eclipse-workspace/Digital-Nirvana/Trance-Irs/src/main/java/Features/Skimmer.feature"
   }
 ]

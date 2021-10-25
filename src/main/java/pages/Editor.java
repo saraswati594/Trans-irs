@@ -32,6 +32,20 @@ public class Editor {
    @FindBy(xpath="//a[contains(text(),'Get Editor Job')]")
    WebElement EditorJob;
    
+   @FindBy(xpath="/html/body/div[1]/div[2]/div[1]/div[1]/div[1]/input[1]")
+   WebElement moveup;
+   
+   @FindBy(xpath="//strong[contains(text(),'Editor')]")
+   WebElement editor;
+   
+   @FindBy(xpath="//strong[@id='ticker_value']")
+   WebElement ticker;
+   
+   @FindBy(xpath="//strong[@id='meta_event_id']")
+   WebElement eventid;
+   
+   @FindBy(xpath="//strong[@id='meta_event_id']")
+   WebElement save;
    
    public void click_username(String un) {
 	   username.sendKeys(un);
@@ -62,4 +76,39 @@ public class Editor {
 	  EditorJob.click();
 	  
    }
+   
+   public void clickMoveup() {
+	   moveup.click();
+   }
+   
+   public void matchPosition() {
+	   if(editor.getText().equalsIgnoreCase("Editor")) {
+			System.out.println("succesfully reached in editor page");
+		}
+		else {
+			System.out.println("failed");
+			System.exit(1);
+		}
+   }
+   public void matchevent(String evnt) {
+	  if(eventid.getText().equalsIgnoreCase(evnt)) {
+		  System.out.println("event id is matched");
+	  }
+	  else {
+		  System.out.println("ticker match failed");
+		  System.exit(1);
+	  }
+   }
+   
+   public void matchticker(String tck) {
+		  if(ticker.getText().equalsIgnoreCase(tck)) {
+			  System.out.println("ticker is matched");
+		  }
+		  else {
+			  System.out.println("ticker match failed");
+			  System.exit(1);
+		  }
+	   }
+   
+   
 }

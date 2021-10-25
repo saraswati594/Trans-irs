@@ -32,6 +32,32 @@ public class LunchPage {
     @FindBy(xpath="//select[@id='time_zone']")
     WebElement timezone;
     
+    @FindBy(xpath="/html/body/div[1]/div[2]/div/div[5]/table/tbody/tr/td[3]")
+    WebElement ticker;
+    
+    @FindBy(xpath="And user check the events are present or not")
+    WebElement nodataavailble;
+    
+    @FindBy(xpath="//a[contains(text(),'10139')]")
+    WebElement recording;
+    
+    
+    @FindBy(xpath="//div[@id='custom-modal-body']//h3[@id='no-data-msg']")
+    WebElement nodata;
+    
+    
+    @FindBy(xpath="/html/body/div[1]/div[2]/div/div[5]/table/tbody/tr/td[5]/select")
+    WebElement skimmer;
+
+    @FindBy(xpath="/html/body/div[1]/div[2]/div/div[5]/table/tbody/tr/td[7]/select")
+    WebElement editor;
+    
+    @FindBy(xpath="/html/body/div[1]/div[2]/div/div[5]/table/tbody/tr/td[8]/select")
+    WebElement qc;
+    
+    @FindBy(xpath="/html/body/div[1]/div[2]/div/div[5]/table/tbody/tr/td[14]/button[2]/b")
+    WebElement priority;
+    
  	public void displayDN() {
 		if(DNdisplay.isDisplayed()) {
 			System.out.println("DN Process displaying");
@@ -80,5 +106,55 @@ public class LunchPage {
  	public void enter_timezone() {
  		Select tizo = new Select(searchby);
  		tizo.selectByIndex(1);
+ 	}
+ 	
+// 	public void event_data_available() {
+// 		if(nodataavailble.isDisplayed()) {
+// 			System.exit(0);
+// 		}
+// 		else {
+// 			System.out.println("Data is availble");
+// 		}
+// 		
+// 	}
+ 	public void matchTicker(String tic) {
+ 		String match = ticker.getText();
+ 		System.out.println(match);
+ 		System.out.println(tic);
+ 		if(match.equalsIgnoreCase(tic)){
+ 			System.out.println("ticker matched");
+ 		}
+ 		else {
+ 			System.out.println("ticker is not matched");
+ 			System.exit(-1);
+ 		}
+ 	}
+ 	
+ 	public void data_availble() {
+ 		if(nodata.isDisplayed()) {
+ 			System.exit(0);
+ 		}
+ 		else {
+ 			System.out.println("data is availble");
+ 		}
+ 	}
+ 	
+ 	public void enterSkimmer(String skim) throws InterruptedException {
+ 		Select sel = new Select(skimmer);
+ 		sel.selectByValue(skim);
+ 		Thread.sleep(1000);
+ 	}
+ 	public void enterEditor(String ed) throws InterruptedException {
+ 		Select sel = new Select(editor);
+ 		sel.selectByValue(ed);
+ 		Thread.sleep(1000);
+ 	}
+ 	public void enterQc(String qc) throws InterruptedException {
+ 		Select sel = new Select(this.qc);
+ 		sel.selectByValue(qc);
+ 		Thread.sleep(1000);
+ 	}
+ 	public void enterPrority() {
+ 		priority.click();
  	}
 }
