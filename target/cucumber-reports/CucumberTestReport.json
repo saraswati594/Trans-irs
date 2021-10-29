@@ -3,52 +3,40 @@
     "line": 1,
     "elements": [
       {
-        "line": 27,
-        "name": "User should edit the skimmer part",
+        "line": 111,
+        "name": "User should lunch the application",
         "description": "",
-        "id": "as-a-trance-user,-skimmer-editing;user-should-edit-the-skimmer-part;;2",
+        "id": "as-a-trance-user,-lunch-the-application;user-should-lunch-the-application;;2",
         "type": "scenario",
         "keyword": "Scenario Outline",
         "steps": [
           {
             "result": {
-              "duration": 8839021300,
+              "duration": 8802579600,
               "status": "passed"
             },
             "line": 5,
-            "name": "opening Trance-irs application",
+            "name": "open ecs application",
             "match": {
-              "location": "SkimmerStep.open_Trance_application()"
+              "location": "LunchStep.loginToDaggr()"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 2064686300,
+              "duration": 206944800,
               "status": "passed"
             },
             "line": 6,
-            "name": "User able see the Trance-IRSs Application Signing Page",
-            "match": {
-              "location": "SkimmerStep.user_able_to_see_Trans()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 154935600,
-              "status": "passed"
-            },
-            "line": 7,
-            "name": "user able to enter skimmer valid usernames \"shetty1\"",
+            "name": "user enter valid username \"shetty\"",
             "match": {
               "arguments": [
                 {
-                  "val": "shetty1",
-                  "offset": 44
+                  "val": "shetty",
+                  "offset": 27
                 }
               ],
-              "location": "SkimmerStep.user_enter_the_valid_(String)"
+              "location": "LunchStep.enterUserName(String)"
             },
             "matchedColumns": [
               0
@@ -57,212 +45,1403 @@
           },
           {
             "result": {
-              "duration": 146164100,
+              "duration": 140375200,
               "status": "passed"
             },
-            "line": 8,
-            "name": "user able to enter skimmer valid password \"dnis@123\"",
+            "line": 7,
+            "name": "user enter valid password \"dnis@123\"",
             "match": {
               "arguments": [
                 {
                   "val": "dnis@123",
-                  "offset": 43
+                  "offset": 27
                 }
               ],
-              "location": "SkimmerStep.user_enter_the_valid_pass(String)"
+              "location": "LunchStep.enter_Pass(String)"
             },
             "matchedColumns": [
               1
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 8473236500,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "click on signin button",
+            "match": {
+              "location": "LunchStep.submitLogin()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 10637500,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "user succesfully reached to homepage",
+            "match": {
+              "location": "LunchStep.succuessfullHomepage()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 3053387300,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "user click on add event",
+            "match": {
+              "location": "LunchStep.clickAddEvent()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 8095300,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "user can see new eventpage",
+            "match": {
+              "location": "LunchStep.see_new_event_page()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 270985000,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "user choose event type as",
+            "match": {
+              "location": "LunchStep.chooseeventtype()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 682697100,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "user enter company name as \"Apple\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Apple",
+                  "offset": 28
+                }
+              ],
+              "location": "LunchStep.entercompanyname(String)"
+            },
+            "matchedColumns": [
+              2
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 646706100,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "user enter date and time as \"2021-10-29 06:55\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "2021-10-29 06:55",
+                  "offset": 29
+                }
+              ],
+              "location": "LunchStep.dateandtime(String)"
+            },
+            "matchedColumns": [
+              3
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 250854100,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "user choose final quarter as \"Q2\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Q2",
+                  "offset": 30
+                }
+              ],
+              "location": "LunchStep.choofinalquarter(String)"
+            },
+            "matchedColumns": [
+              4
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 246809300,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "user choose final year as \"2021\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "2021",
+                  "offset": 27
+                }
+              ],
+              "location": "LunchStep.choosefinalyear(String)"
+            },
+            "matchedColumns": [
+              5
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 166488100,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "user choose source url as \"www.abc.com\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "www.abc.com",
+                  "offset": 27
+                }
+              ],
+              "location": "LunchStep.choosesourceurl(String)"
+            },
+            "matchedColumns": [
+              6
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 147523000,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "user enter live phonecall as \"8558592056\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "8558592056",
+                  "offset": 30
+                }
+              ],
+              "location": "LunchStep.enterlivephonecall(String)"
+            },
+            "matchedColumns": [
+              7
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 139344600,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "user enter passcode as \"8870579\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "8870579",
+                  "offset": 24
+                }
+              ],
+              "location": "LunchStep.enterpasscode(String)"
+            },
+            "matchedColumns": [
+              8
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 154544700,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "user enter replay livecall as \"\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "",
+                  "offset": 31
+                }
+              ],
+              "location": "LunchStep.enterreplaylivecall(String)"
+            },
+            "matchedColumns": [
+              9
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 154107300,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "user enter replay passcode as \"\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "",
+                  "offset": 31
+                }
+              ],
+              "location": "LunchStep.enterreplaypasscode(String)"
+            },
+            "matchedColumns": [
+              10
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 228999400,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "User enter live webcasturl as \"https://www.youtube.com/watch?v\u003dIv2WgJ3YM9o\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "https://www.youtube.com/watch?v\u003dIv2WgJ3YM9o",
+                  "offset": 31
+                }
+              ],
+              "location": "LunchStep.enterlivewebcasturl(String)"
+            },
+            "matchedColumns": [
+              11
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 108917500,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "user enter replay webcast url as \"\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "",
+                  "offset": 34
+                }
+              ],
+              "location": "LunchStep.enterreplaywebcasturl(String)"
+            },
+            "matchedColumns": [
+              12
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 41656016200,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "user click on next button",
+            "match": {
+              "location": "LunchStep.nextbutton()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 10006992100,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "user need to wait for event create",
+            "match": {
+              "location": "LunchStep.waitforevents()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2005030800,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "user click on procesed data",
+            "match": {
+              "location": "LunchStep.user_clik_proceeddata()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 49975500,
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "user check the event is created or not by \"APPLE\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "APPLE",
+                  "offset": 43
+                }
+              ],
+              "location": "LunchStep.check_event_created(String)"
+            },
+            "matchedColumns": [
+              13
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1033181800,
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "user able to logout",
+            "match": {
+              "location": "LunchStep.logout1()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 4527156400,
+              "status": "passed"
+            },
+            "line": 30,
+            "name": "open Trance-Irs application",
+            "match": {
+              "location": "LunchStep.lunchTrance()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2095110400,
+              "status": "passed"
+            },
+            "line": 31,
+            "name": "User able see Trance-IRS Application Signin Page",
+            "match": {
+              "location": "LunchStep.seeSignPage()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 181561400,
+              "status": "passed"
+            },
+            "line": 32,
+            "name": "user enter valid admin username \"shetty1\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "shetty1",
+                  "offset": 33
+                }
+              ],
+              "location": "LunchStep.enterUserName_trance(String)"
+            },
+            "matchedColumns": [
+              14
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 195612800,
+              "status": "passed"
+            },
+            "line": 33,
+            "name": "user enter valid admin password \"dnis@123\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "dnis@123",
+                  "offset": 33
+                }
+              ],
+              "location": "LunchStep.enter_Pass_ecs(String)"
+            },
+            "matchedColumns": [
+              15
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1034996700,
+              "status": "passed"
+            },
+            "line": 34,
+            "name": "click on login button",
+            "match": {
+              "location": "LunchStep.submitLogin_ecs()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1074306600,
+              "status": "passed"
+            },
+            "line": 35,
+            "name": "user succesfully reached to pre-homepage",
+            "match": {
+              "location": "LunchStep.succuessfullHomepage_trance()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 728568400,
+              "status": "passed"
+            },
+            "line": 36,
+            "name": "user able click on DN Workflow for call management",
+            "match": {
+              "location": "LunchStep.clickDn()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 110913600,
+              "status": "passed"
+            },
+            "line": 37,
+            "name": "user click on manage option on menubar for call management",
+            "match": {
+              "location": "LunchStep.manage()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1568465800,
+              "status": "passed"
+            },
+            "line": 38,
+            "name": "user click on call management function",
+            "match": {
+              "location": "LunchStep.call_management()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2007374000,
+              "status": "passed"
+            },
+            "line": 39,
+            "name": "user select the job date as \"2021-10-26\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "2021-10-26",
+                  "offset": 29
+                }
+              ],
+              "location": "LunchStep.user_select_the_jobdate(String)"
+            },
+            "matchedColumns": [
+              16
             ],
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 1277127600,
+              "duration": 198312600,
               "status": "passed"
             },
-            "line": 9,
-            "name": "user able to clicks on the login button",
+            "line": 40,
+            "name": "user enter the ticker name as \"APPLECREDT\"",
             "match": {
-              "location": "SkimmerStep.user_click_on_the_login_button()"
+              "arguments": [
+                {
+                  "val": "APPLECREDT",
+                  "offset": 31
+                }
+              ],
+              "location": "LunchStep.user_enter_ticker_name(String)"
+            },
+            "matchedColumns": [
+              17
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1325358800,
+              "status": "passed"
+            },
+            "line": 41,
+            "name": "user select the timezone as \"UTC\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "UTC",
+                  "offset": 29
+                }
+              ],
+              "location": "LunchStep.user_select_the_timezone(String)"
+            },
+            "matchedColumns": [
+              18
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 167991900,
+              "status": "passed"
+            },
+            "line": 42,
+            "name": "user click on display button",
+            "match": {
+              "location": "LunchStep.user_click_display_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 92609600,
+              "status": "passed"
+            },
+            "line": 43,
+            "name": "user verify the tiker present or not \"APPLECREDT\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "APPLECREDT",
+                  "offset": 38
+                }
+              ],
+              "location": "LunchStep.user_verify_the_tiker_present_or_not(String)"
+            },
+            "matchedColumns": [
+              19
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1003805000,
+              "status": "passed"
+            },
+            "line": 44,
+            "name": "user select the team management",
+            "match": {
+              "location": "LunchStep.user_select_the_team_management()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3961715700,
+              "status": "passed"
+            },
+            "line": 45,
+            "name": "user select the team for skimmer",
+            "match": {
+              "location": "LunchStep.user_select_the_team_for_skimmer()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3243142000,
+              "status": "passed"
+            },
+            "line": 46,
+            "name": "user select the team for editor",
+            "match": {
+              "location": "LunchStep.user_select_the_team_for_editor()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3576867300,
+              "status": "passed"
+            },
+            "line": 47,
+            "name": "user select the team for qc",
+            "match": {
+              "location": "LunchStep.user_select_the_team_for_qc()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 5212968000,
+              "status": "passed"
+            },
+            "line": 48,
+            "name": "user select the all prority",
+            "match": {
+              "location": "LunchStep.user_select_the_all_prority()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 11262607300,
+              "status": "passed"
+            },
+            "line": 49,
+            "name": "user logout to homepage",
+            "match": {
+              "location": "LunchStep.logout()"
             },
             "keyword": "Then "
           },
           {
             "result": {
-              "duration": 1059631300,
+              "duration": 1726424500,
               "status": "passed"
             },
-            "line": 10,
-            "name": "user succesfullys reached to the pre-homepage",
+            "line": 50,
+            "name": "user able to clicks on the DN Workflow for skimmer",
             "match": {
-              "location": "SkimmerStep.user_succesfully_reached_to_the_prehomepage()"
+              "location": "LunchStep.user_able_to_click_on_the_DN_workflow1()"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 1056259100,
+              "duration": 58997200,
               "status": "passed"
             },
-            "line": 11,
-            "name": "user able to see the homepage DN processs",
+            "line": 51,
+            "name": "user succesfully reacheds to the DN Page for skimer",
             "match": {
-              "location": "SkimmerStep.user_able_to_see_the_homepage_DN_process()"
+              "location": "LunchStep.user_succesfully_reached_to_the_DN_Page1()"
             },
             "keyword": "Then "
           },
           {
             "result": {
-              "duration": 1377684700,
+              "duration": 99907300,
               "status": "passed"
             },
-            "line": 12,
-            "name": "user able to clicks on the DN Workflow",
+            "line": 52,
+            "name": "user click on the file option on menubars for skimer",
             "match": {
-              "location": "SkimmerStep.user_able_to_click_on_the_DN_workflow()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 41705400,
-              "status": "passed"
-            },
-            "line": 13,
-            "name": "user succesfully reacheds to the DN Page",
-            "match": {
-              "location": "SkimmerStep.user_succesfully_reached_to_the_DN_Page()"
+              "location": "LunchStep.user_click_on_the_file_option_on_menubar1()"
             },
             "keyword": "Then "
           },
           {
             "result": {
-              "duration": 99932300,
+              "duration": 3116187900,
               "status": "passed"
             },
-            "line": 14,
-            "name": "user click on the file option on menubars",
-            "match": {
-              "location": "SkimmerStep.user_click_on_the_file_option_on_menubar()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 1392614200,
-              "status": "passed"
-            },
-            "line": 15,
+            "line": 53,
             "name": "user click on the GetWriterJobs Page",
             "match": {
-              "location": "SkimmerStep.user_click_on_the_GetWriterJob_Page()"
+              "location": "LunchStep.user_click_on_the_GetWriterJob_Page()"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 34000,
+              "duration": 27800,
               "status": "passed"
             },
-            "line": 16,
+            "line": 54,
             "name": "user succesfully reacheds to the GetWriterJob Page",
             "match": {
-              "location": "SkimmerStep.user_succesfully_reached_to_the_GetWriterJob_Page()"
+              "location": "LunchStep.user_succesfully_reached_to_the_GetWriterJob_Page()"
             },
             "keyword": "Then "
           },
           {
             "result": {
-              "duration": 104600,
+              "duration": 70400,
               "status": "passed"
             },
-            "line": 17,
-            "name": "user checks the ticker name it should match with given ticker",
+            "line": 55,
+            "name": "user verify text should present in text filed",
             "match": {
-              "location": "SkimmerStep.user_checks_the_ticker_name_it_should_match_with_given_ticker()"
+              "location": "LunchStep.user_verify_text_should_present_in_text_filed()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 5072878700,
+              "status": "passed"
+            },
+            "line": 56,
+            "name": "user push the text to upper text filed",
+            "match": {
+              "location": "LunchStep.user_push_the_text_to_upper_text_filed()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 110468800,
+              "status": "passed"
+            },
+            "line": 57,
+            "name": "user save the process for skimmer",
+            "match": {
+              "location": "LunchStep.user_save_the_process()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 106423100,
+              "status": "passed"
+            },
+            "line": 58,
+            "name": "user click on file option on menubar",
+            "match": {
+              "location": "LunchStep.user_click_on_file_option_on_menubar()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1118955900,
+              "status": "passed"
+            },
+            "line": 59,
+            "name": "user click on jobcomplete option for skimmer",
+            "match": {
+              "location": "LunchStep.user_click_on_jobcomplete_option()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2909865100,
+              "status": "passed"
+            },
+            "line": 60,
+            "name": "user able to see popup option for skimmer",
+            "match": {
+              "location": "LunchStep.user_able_to_see_popup_option()"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 73900,
+              "duration": 1014766500,
               "status": "passed"
             },
-            "line": 18,
-            "name": "user verify text should present in text filed",
+            "line": 61,
+            "name": "user click on logout for skimmer",
             "match": {
-              "location": "SkimmerStep.user_verify_text_should_present_in_text_filed()"
+              "location": "LunchStep.user_click_on_logout()"
             },
             "keyword": "Then "
           },
           {
             "result": {
-              "duration": 29400,
+              "duration": 1924114000,
               "status": "passed"
             },
-            "line": 19,
-            "name": "user push the text to upper text filed",
+            "line": 62,
+            "name": "users able to click on the DN Workflow for editor",
             "match": {
-              "location": "SkimmerStep.user_push_the_text_to_upper_text_filed()"
+              "location": "LunchStep.user_able_to_click_on_the_DN_workflow()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 68752700,
+              "status": "passed"
+            },
+            "line": 63,
+            "name": "users succesfully reached to the DN Page for editor",
+            "match": {
+              "location": "LunchStep.user_succesfully_reached_to_the_DN_Page()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 104485200,
+              "status": "passed"
+            },
+            "line": 64,
+            "name": "users click on the file option on menubar for editor",
+            "match": {
+              "location": "LunchStep.user_click_on_the_file_option_on_menubar3()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2335249000,
+              "status": "passed"
+            },
+            "line": 65,
+            "name": "users click on the GetEditorJob Page",
+            "match": {
+              "location": "LunchStep.click_on_the_GetEditorJob_Page()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 20700,
+              "status": "passed"
+            },
+            "line": 66,
+            "name": "users succesfully reached to the GetEditorJob Page",
+            "match": {
+              "location": "LunchStep.user_succesfully_reached_to_the_GetEditorJob_Page()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1631293600,
+              "status": "passed"
+            },
+            "line": 67,
+            "name": "user click on move up button",
+            "match": {
+              "location": "LunchStep.user_click_moveup_button()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 70328900,
+              "status": "passed"
+            },
+            "line": 68,
+            "name": "user click on save button for editor",
+            "match": {
+              "location": "LunchStep.user_click_on_save_button()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 31600,
+              "duration": 94692000,
               "status": "passed"
             },
-            "line": 20,
-            "name": "user save the process",
-            "match": {
-              "location": "SkimmerStep.user_save_the_process()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 130200,
-              "status": "passed"
-            },
-            "line": 21,
+            "line": 69,
             "name": "user click on file option on menubar",
             "match": {
-              "location": "SkimmerStep.user_click_on_file_option_on_menubar()"
+              "location": "LunchStep.user_click_on_file_option_on_menubar()"
             },
             "keyword": "Then "
           },
           {
             "result": {
-              "duration": 39800,
+              "duration": 487818600,
               "status": "passed"
             },
-            "line": 22,
-            "name": "user click on jobcomplete option",
+            "line": 70,
+            "name": "user click on job complete option for editor",
             "match": {
-              "location": "SkimmerStep.user_click_on_jobcomplete_option()"
+              "location": "LunchStep.user_click_on_job_complete_option()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1905465000,
+              "status": "passed"
+            },
+            "line": 71,
+            "name": "user able to see popup job complete for editor",
+            "match": {
+              "location": "LunchStep.user_able_to_see_popup_job_complete()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 784986900,
+              "status": "passed"
+            },
+            "line": 72,
+            "name": "user click on logout button editor",
+            "match": {
+              "location": "LunchStep.user_click_on_logout_button()"
             },
             "keyword": "Then "
           },
           {
             "result": {
-              "duration": 38800,
+              "duration": 1835330200,
               "status": "passed"
             },
-            "line": 23,
-            "name": "user click on logout",
+            "line": 73,
+            "name": "user able to click on the DN Workfloow for qc",
             "match": {
-              "location": "SkimmerStep.user_click_on_logout()"
+              "location": "LunchStep.user_able_to_click_on_the_DN_workflow2()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 52897800,
+              "status": "passed"
+            },
+            "line": 74,
+            "name": "user succesfuly reached to the DN Page for qc",
+            "match": {
+              "location": "LunchStep.user_succesfully_reached_to_the_DN_Page2()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 93417200,
+              "status": "passed"
+            },
+            "line": 75,
+            "name": "user click on the file optiion on menubar for qc",
+            "match": {
+              "location": "LunchStep.user_click_on_the_file_option_on_menubar2()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 3479706400,
+              "status": "passed"
+            },
+            "line": 76,
+            "name": "user click on the GetQCJoob Page",
+            "match": {
+              "location": "LunchStep.user_click_on_the_GetQCJob_Page()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 52000,
+              "status": "passed"
+            },
+            "line": 77,
+            "name": "user succesfully reached to the GetQCJoob Page",
+            "match": {
+              "location": "LunchStep.user_succesfully_reached_to_the_GetQCJob_Page()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1016802300,
+              "status": "passed"
+            },
+            "line": 78,
+            "name": "user click on save option for qc",
+            "match": {
+              "location": "LunchStep.user_click_on_save_option3()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 111453300,
+              "status": "passed"
+            },
+            "line": 79,
+            "name": "user click on file option for qc",
+            "match": {
+              "location": "LunchStep.user_click_on_file_option()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1367764200,
+              "status": "passed"
+            },
+            "line": 80,
+            "name": "user click on close job button for qc",
+            "match": {
+              "location": "LunchStep.user_click_on_close_job_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2152700700,
+              "status": "passed"
+            },
+            "line": 81,
+            "name": "user can able to see popup for confirmation for qc",
+            "match": {
+              "location": "LunchStep.user_can_able_to_see_popup_for_confirmation()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 729215700,
+              "status": "passed"
+            },
+            "line": 82,
+            "name": "user click on logout option",
+            "match": {
+              "location": "LunchStep.user_click_on_logout_option()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1814781000,
+              "status": "passed"
+            },
+            "line": 83,
+            "name": "user able to click on the DN Workflows for xmlpage",
+            "match": {
+              "location": "LunchStep.user_able_click_dnworkflow()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1138435900,
+              "status": "passed"
+            },
+            "line": 84,
+            "name": "user click on the file opttion on menubar for xmlpage",
+            "match": {
+              "location": "LunchStep.user_click_on_the_file_option_on_menubar()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2237105100,
+              "status": "passed"
+            },
+            "line": 85,
+            "name": "user click on the ManageXML Option for xml",
+            "match": {
+              "location": "LunchStep.user_click_on_the_managexml_option()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 27600,
+              "status": "passed"
+            },
+            "line": 86,
+            "name": "user succesfully reached to the ManageXML Pages",
+            "match": {
+              "location": "LunchStep.user_succesfully_reached_to_the_managexml_page()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 80700,
+              "status": "passed"
+            },
+            "line": 87,
+            "name": "user enters the from date \"\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "",
+                  "offset": 27
+                }
+              ],
+              "location": "LunchStep.user_enter_the_fromdate(String)"
+            },
+            "matchedColumns": [
+              20
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 68400,
+              "status": "passed"
+            },
+            "line": 88,
+            "name": "user enters the to date \"\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "",
+                  "offset": 25
+                }
+              ],
+              "location": "LunchStep.user_enter_the_todate(String)"
+            },
+            "matchedColumns": [
+              21
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1208943800,
+              "status": "passed"
+            },
+            "line": 89,
+            "name": "user select the ticker",
+            "match": {
+              "location": "LunchStep.user_select_the_event_or_ticker()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1155168100,
+              "status": "passed"
+            },
+            "line": 90,
+            "name": "user enter the ticker searchby \"APPLECREDT\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "APPLECREDT",
+                  "offset": 32
+                }
+              ],
+              "location": "LunchStep.user_enter_the_eventid_or_ticker(String)"
+            },
+            "matchedColumns": [
+              17
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1120363500,
+              "status": "passed"
+            },
+            "line": 91,
+            "name": "user click on load events button",
+            "match": {
+              "location": "LunchStep.user_click_on_load_events_button()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1227074000,
+              "status": "passed"
+            },
+            "line": 92,
+            "name": "user select the raw formats",
+            "match": {
+              "location": "LunchStep.user_select_the_raw_format()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1367779100,
+              "status": "passed"
+            },
+            "line": 93,
+            "name": "user click on load button for xml page",
+            "match": {
+              "location": "LunchStep.user_click_on_the_load_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1131518200,
+              "status": "passed"
+            },
+            "line": 94,
+            "name": "user click on view xmls",
+            "match": {
+              "location": "LunchStep.user_click_on_view_xml()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 31500,
+              "status": "passed"
+            },
+            "line": 95,
+            "name": "user can able to see the xmls tag script",
+            "match": {
+              "location": "LunchStep.user_can_able_to_see_the_xml()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1188061800,
+              "status": "passed"
+            },
+            "line": 96,
+            "name": "user enter the periods end date \"2021-09-30\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "2021-09-30",
+                  "offset": 33
+                }
+              ],
+              "location": "LunchStep.user_enter_the_period_enddate(String)"
+            },
+            "matchedColumns": [
+              23
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1284823900,
+              "status": "passed"
+            },
+            "line": 97,
+            "name": "user select the industry types",
+            "match": {
+              "location": "LunchStep.user_select_the_industry_type()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 10867115600,
+              "status": "passed"
+            },
+            "line": 98,
+            "name": "user click on save option for xml",
+            "match": {
+              "location": "LunchStep.user_click_on_save_option()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 5111872800,
+              "status": "passed"
+            },
+            "line": 99,
+            "name": "user click on uplaod options",
+            "match": {
+              "location": "LunchStep.user_click_on_upload_option()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 124800,
+              "status": "passed"
+            },
+            "line": 100,
+            "name": "user enter the ticker \"APPLECREDT\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "APPLECREDT",
+                  "offset": 23
+                }
+              ],
+              "location": "LunchStep.user_enter_ticker_for_audio(String)"
+            },
+            "matchedColumns": [
+              17
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 11016269500,
+              "status": "passed"
+            },
+            "line": 101,
+            "name": "user uplaod the audio click on audio uplaod buttons",
+            "match": {
+              "location": "LunchStep.user_uplaod_the_audio_click_on_audio_upload_button()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 38200,
+              "status": "passed"
+            },
+            "line": 102,
+            "name": "user upload raw xml files",
+            "match": {
+              "location": "LunchStep.user_upload_raw_xml_file()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 20600,
+              "status": "passed"
+            },
+            "line": 103,
+            "name": "user uplaod corrected xml files",
+            "match": {
+              "location": "LunchStep.user_uplaod_corrected_xml_file()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 12000,
+              "status": "passed"
+            },
+            "line": 104,
+            "name": "user able to sucessfully uplaod the file for xml",
+            "match": {
+              "location": "LunchStep.user_able_to_succesfuly_upload_the_file()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1156821300,
+              "status": "passed"
+            },
+            "line": 105,
+            "name": "user logout the page for xml page",
+            "match": {
+              "location": "LunchStep.user_logout_the_page()"
             },
             "keyword": "Then "
           }
         ]
       }
     ],
-    "name": "As a trance user, skimmer editing",
+    "name": "As a Trance user, lunch the application",
     "description": "",
-    "id": "as-a-trance-user,-skimmer-editing",
+    "id": "as-a-trance-user,-lunch-the-application",
     "keyword": "Feature",
-    "uri": "C:/Users/hp/eclipse-workspace/Digital-Nirvana/Trance-Irs/src/main/java/Features/Skimmer.feature"
+    "uri": "C:/Users/hp/eclipse-workspace/Digital-Nirvana/Trance-Irs/src/main/java/Features/Lunch.feature"
   }
 ]

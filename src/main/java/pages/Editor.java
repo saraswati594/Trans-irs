@@ -47,6 +47,8 @@ public class Editor {
    @FindBy(xpath="//strong[@id='meta_event_id']")
    WebElement save;
    
+   @FindBy(xpath="/html/body/div[1]/div[2]/div[2]/div/div/div[3]/button[2]")
+   WebElement editorpopup;
    public void click_username(String un) {
 	   username.sendKeys(un);
 	   
@@ -109,6 +111,9 @@ public class Editor {
 			  System.exit(1);
 		  }
 	   }
+   public void popup() {
+	   editorpopup.click();
+   }
    
    
 }

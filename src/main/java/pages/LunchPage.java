@@ -14,7 +14,7 @@ public class LunchPage {
 	  PageFactory.initElements(driver, this);
   }
     
-    @FindBy(xpath="//h2[contains(text(),'DN')]")
+    @FindBy(xpath="/html/body/div[1]/div[2]/div[2]/a[3]")
     WebElement DNdisplay;
     
     @FindBy(xpath="//h2[contains(text(),'Welcome to Dn')]")
@@ -29,7 +29,7 @@ public class LunchPage {
     @FindBy(xpath="//input[@id='search_param']")
     WebElement searchparam;
     
-    @FindBy(xpath="//select[@id='time_zone']")
+    @FindBy(xpath="/html/body/div[1]/div[2]/div/div[3]/table/tbody/tr/td[4]/div/select")
     WebElement timezone;
     
     @FindBy(xpath="/html/body/div[1]/div[2]/div/div[5]/table/tbody/tr/td[3]")
@@ -58,6 +58,22 @@ public class LunchPage {
     @FindBy(xpath="/html/body/div[1]/div[2]/div/div[5]/table/tbody/tr/td[14]/button[2]/b")
     WebElement priority;
     
+    @FindBy(xpath="/html/body/div[1]/div[1]/div/div[2]/ul[5]/li/ul/li[1]/a")
+    WebElement home;
+    
+    @FindBy(id="search-reports-btn")
+    WebElement display;
+    
+    @FindBy(xpath="/html/body/div[1]/div[1]/div/div[2]/ul[5]/li/a")
+    WebElement h1;
+    
+   @FindBy(xpath="/html/body/div[1]/div[2]/div/div[3]/table/tbody/tr/td[1]/div")
+   WebElement calender;
+   
+   @FindBy(xpath="/html/body/div[1]/div[2]/div/div[3]/table/tbody/tr/td[1]/div/input")
+   WebElement calendercr;
+    
+    
  	public void displayDN() {
 		if(DNdisplay.isDisplayed()) {
 			System.out.println("DN Process displaying");
@@ -80,8 +96,16 @@ public class LunchPage {
  		}
  	}
  	
- 	public void enter_date(String eventdate) {
- 		date.sendKeys("2021-10-12");
+ 	public void enter_date(String eventdate) throws InterruptedException {
+// 		calender.click();
+// 		Thread.sleep(500);
+// 		calendercr.clear();
+// 		Thread.sleep(500);
+ 		//driver.findElement(By.xpath("/html/body/div[1]/div[2]/div/div[3]/table/tbody/tr/td[1]/div/input")).sendKeys(eventdate);
+ 		calender.click();
+ 		calender.sendKeys(eventdate);
+ 		//driver.findElement(By.xpath("/html/body/div[1]/div[2]/div/div[1]/h2")).click();  
+ 		Thread.sleep(2000);
  	}
  	
  	public void enter_tickerorevent() {
@@ -103,11 +127,19 @@ public class LunchPage {
  		searchparam.sendKeys("232323");
  		
  	}
- 	public void enter_timezone() {
- 		Select tizo = new Select(searchby);
- 		tizo.selectByIndex(1);
+ 	
+ 	
+ 	public void enterTicker(String ticker) {
+ 		searchparam.sendKeys(ticker);
  	}
  	
+ 	public void enter_timezone(String time) {
+ 		Select tizo = new Select(timezone);
+ 		tizo.selectByValue(time);;
+ 	}
+ 	public void display() {
+ 		display.click();
+ 	}
 // 	public void event_data_available() {
 // 		if(nodataavailble.isDisplayed()) {
 // 			System.exit(0);
@@ -117,6 +149,11 @@ public class LunchPage {
 // 		}
 // 		
 // 	}
+ 	
+ 	public void team_management() {
+ 		System.out.println("selecting team mangement");
+ 	}
+ 	
  	public void matchTicker(String tic) {
  		String match = ticker.getText();
  		System.out.println(match);
@@ -126,7 +163,7 @@ public class LunchPage {
  		}
  		else {
  			System.out.println("ticker is not matched");
- 			System.exit(-1);
+ 			//System.exit(0);
  		}
  	}
  	
@@ -139,22 +176,30 @@ public class LunchPage {
  		}
  	}
  	
- 	public void enterSkimmer(String skim) throws InterruptedException {
+ 	
+ 	public void enterSkimmer() throws InterruptedException {
  		Select sel = new Select(skimmer);
- 		sel.selectByValue(skim);
- 		Thread.sleep(1000);
+ 		sel.selectByValue("574");
+ 		Thread.sleep(3000);
  	}
- 	public void enterEditor(String ed) throws InterruptedException {
+ 	public void enterEditor() throws InterruptedException {
  		Select sel = new Select(editor);
- 		sel.selectByValue(ed);
- 		Thread.sleep(1000);
+ 		sel.selectByValue("574");
+ 		Thread.sleep(3000);
  	}
- 	public void enterQc(String qc) throws InterruptedException {
+ 	public void enterQc() throws InterruptedException {
  		Select sel = new Select(this.qc);
- 		sel.selectByValue(qc);
- 		Thread.sleep(1000);
+ 		sel.selectByValue("574");
+ 		Thread.sleep(3000);
  	}
  	public void enterPrority() {
  		priority.click();
  	}
+ 	
+ 	public void clickHome() {
+ 		h1.click();
+ 		home.click();
+ 	}
+ 	
+ 	
 }

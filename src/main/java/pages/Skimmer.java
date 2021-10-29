@@ -6,12 +6,15 @@ import java.awt.Robot;
 import java.awt.event.KeyEvent;
 
 import org.openqa.selenium.Alert;
+import org.openqa.selenium.Dimension;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.Select;
 
 public class Skimmer {
 
@@ -58,16 +61,16 @@ public class Skimmer {
 	@FindBy(xpath="//body[1]/div[1]/div[2]/div[1]/div[1]/div[2]/div[3]/div[1]/ul[1]/li[1]/span[1]")
 	WebElement Ticker;
 	
-	@FindBy(id="//button[@id='audio_start_time']")
+	@FindBy(xpath="//button[@id='audio_start_time']")
 	WebElement Conference_Start;
 	
-	@FindBy(id="//button[@id='audio_end_time']")
+	@FindBy(xpath="//button[@id='audio_end_time']")
 	WebElement Conference_End;
 	
-	@FindBy(id="//input[@id='moveupButton']")
+	@FindBy(xpath="/html/body/div[1]/div[2]/div[1]/div[1]/div[1]/input[1]")
 	WebElement Save;
 	
-	@FindBy(id="//a[@id='close-job-complete']")
+	@FindBy(xpath="//a[@id='close-job-complete']")
 	WebElement Close_Job_Complete;
 	
 	@FindBy(xpath="//body[1]/div[1]/div[2]/div[1]/div[3]/div[2]/div[1]/div[1]")
@@ -91,7 +94,7 @@ public class Skimmer {
 	@FindBy(xpath="/html/body/div[1]/div[2]/div[1]/div[3]/div[2]/div")
 	WebElement tex5;
 	
-	@FindBy(xpath="/html/body/div[1]/div[2]/div[2]/div/div/div[3]/button[2]")
+	@FindBy(xpath="/html/body/div[1]/div[2]/div[3]/div/div/div[3]/button[2]")
 	WebElement popupok;
 	@FindBy(xpath="/html/body/div[1]/div[2]/div[1]/div[1]/div[1]/input[1]")
 	WebElement save;
@@ -104,6 +107,42 @@ public class Skimmer {
 	
 	@FindBy(xpath="/html/body/div[1]/div[2]/div[1]/div[1]/div[2]/div[2]/div/ul/li[2]/span/strong")
 	WebElement writer;
+	
+	@FindBy(xpath="/html/body/div[1]/div[2]/div[1]/div[3]/div[2]/div")
+	WebElement blankspace;
+	
+	@FindBy(xpath="/html/body/div[1]/div[2]/div[1]/div[3]/div[1]/div[1]/select")
+	WebElement operator;
+	
+	@FindBy(xpath="/html/body/div[1]/div[2]/div[1]/div[3]/div[1]/div[1]/select")
+	WebElement operator1;
+	
+	@FindBy(xpath="/html/body/div[1]/div[2]/div[1]/div[3]/div[1]/div[1]/select")
+	WebElement operator2;
+	
+	@FindBy(xpath="/html/body/div[1]/div[2]/div[1]/div[1]/div[1]/button[1]")
+	WebElement participant;
+	
+	@FindBy(xpath="/html/body/div[1]/div[2]/div[2]/div/div/div[2]/div/div[3]/form/div[2]/input")
+	WebElement partcipantname;
+	
+	@FindBy(xpath="/html/body/div[1]/div[2]/div[2]/div/div/div[3]/button[3]")
+	WebElement partcipantadd;
+	
+	@FindBy(xpath="/html/body/div[1]/div[2]/div[2]/div/div/div[3]/button[4]")
+	WebElement partclose;
+	
+	@FindBy(xpath="/html/body/div[1]/div[2]/div/div[5]/table/tbody/tr/td[14]/button[4]")
+	WebElement cretpart;
+	
+	@FindBy(xpath="/html/body/div[1]/div[2]/div/div[11]/div/div/div[2]/div/div/form/div[8]/select")
+	WebElement cretpartdropdown;
+	
+	@FindBy(xpath="/html/body/div[1]/div[2]/div/div[11]/div/div/div[2]/div/div/form/div[9]/button[1]")
+	WebElement cretpartsubmit;
+	
+	@FindBy(xpath="//button[contains(text(),'Close')]")
+	WebElement closecreet;
 	
 	public void click_username(String un) {
 		username.sendKeys(un);
@@ -179,7 +218,7 @@ public class Skimmer {
 		}
 	}
 	
-	public void pushTextToUpper() throws AWTException {
+	public void pushTextToUpper() throws AWTException, InterruptedException {
 		
 //		tex1.click();
 //		tex1.sendKeys(Keys.F8);
@@ -195,6 +234,7 @@ public class Skimmer {
 //		actions
 //	       .moveToElement(tex2)
 //	        .perform();
+		Thread.sleep(9000);
 //		tex4.sendKeys(Keys.ENTER, Keys.F8);
 //		actions.moveToElement(tex3);
 //		actions.click().build().perform();
@@ -203,12 +243,14 @@ public class Skimmer {
 		//actions.moveToElement(tex2).build().perform();
 		// System.out.println(tex2.getText());
 	//tex1.sendKeys(Keys.DOWN);
+		
 		Robot robot = new Robot();
 		//robot.keyPress(KeyEvent.VK_DOWN);
-		for(int i=0;i<=6;i++) {
+		for(int i=0;i<=61;i++) {
 		robot.keyRelease(KeyEvent.VK_DOWN);
 		}
 		robot.keyPress(KeyEvent.VK_F8);
+		
 		
 
 	}
@@ -259,11 +301,68 @@ public class Skimmer {
 		
 	}
 	public void popupHandle() throws InterruptedException {
-		Thread.sleep(200);
+		Thread.sleep(1000);
 		popupok.click();
 	}
 	public void pushText() {
 		
 		//lasttext.sendKeys(Keys.F8);
 	}
+	public void script() throws AWTException, InterruptedException {
+		blankspace.click();
+		blankspace.sendKeys("A letter is a written message conveyed from one person to another through a medium. The term usually excludes written material intended to be read in its original form by large numbers of people, such as newspapers and placards, although even these may include material in the form of an \"open letter\".");
+		Thread.sleep(500);
+		Robot robo = new Robot();
+		robo.keyPress(KeyEvent.VK_F8);
+		
+		Select select = new Select(operator);
+		select.selectByIndex(3);
+		
+		blankspace.sendKeys("helllo everyone this is robo 1A letter is a written message conveyed from one person to another through a medium. The term usually excludes written material intended to be read in its original form by large numbers of people, such as newspapers and placards, although even these may include material in the form of an \"open letter\".");
+		
+		
+		robo.keyPress(KeyEvent.VK_F8);
+		Thread.sleep(500);
+		Select select1 = new Select(operator1);
+		select1.selectByIndex(2);
+		blankspace.sendKeys("bye everyone");
+		Thread.sleep(500);
+		robo.keyPress(KeyEvent.VK_F8);
+		
+//		participant.click();
+//		partcipantname.sendKeys("panda");
+//		
+//		partcipantadd.click();
+//		partclose.click();
+		
+//		Thread.sleep(200);
+//		Select select2 = new Select(operator2);
+//		select2.deselectByIndex(1);
+//		operator.sendKeys("bye bye");
+//		robo.keyPress(KeyEvent.VK_F8);
+//		
+		
+	}
+	
+	public void cretpart() throws InterruptedException {
+//		JavascriptExecutor js = (JavascriptExecutor) driver;  
+//		
+//		js.executeScript("document.getElementByXpath('enter element id').click();");
+
+		//or
+		//js.executeScript("arguments[0].click();", okButton);
+		cretpart.click();
+		Thread.sleep(1000);
+		
+//		Actions action  = new Actions(driver);
+//		action.moveToElement(cretpart).perform();
+		Select select = new Select(cretpartdropdown);
+		Thread.sleep(1000);
+		select.selectByIndex(0);
+		Thread.sleep(300);
+		cretpartsubmit.click();
+		closecreet.click();
+		
+	}
 }
+

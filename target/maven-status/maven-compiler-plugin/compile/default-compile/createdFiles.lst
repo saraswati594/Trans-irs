@@ -1,6 +1,14 @@
+pages\Editor.class
 pages\LoginPage.class
 pages\ManualJob.class
-pages\LunchPage.class
-stepDefinitions\LoginPageSteps.class
+base\TestUtil.class
+pages\QC.class
+base\Base.class
+pages\ManageXML.class
 pages\MenuBar.class
+MyRunner\TestRunner.class
+pages\CreateEvent.class
+pages\LunchPage.class
 stepDefinitions\LunchStep.class
+pages\Login.class
+pages\Skimmer.class

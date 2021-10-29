@@ -42,6 +42,10 @@ public class QC {
 	@FindBy(xpath="//a[contains(text(),'Get QC Job')]")
 	WebElement QCJob;
 	
+	@FindBy(xpath="/html/body/div[1]/div[2]/div[2]/div/div/div[3]/button[2]")
+	WebElement popup;
+	
+	
 	public void click_username(String un) {
 		username.sendKeys(un);
 		
@@ -101,7 +105,9 @@ public class QC {
 			  }
 		   }
 	   
-	 
+	 public void popup() {
+		 popup.click();
+	 }
 		   
 
 }
